@@ -1,0 +1,481 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+<meta name="description" content="Portfolio d'ArnaudCrtllr, développeur Web Junior">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+  crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/linkstyles.css" />
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Audiowide%7CRoboto+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+  a#cRetour {
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    background: #007bff;
+    opacity: 0.25;
+    position: fixed;
+    right: 20px;
+    opacity: 1;
+    z-index: 99999;
+    transition: all ease-in 0.2s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    text-decoration: none;
+  }
+
+  a#cRetour:before {
+    content: "\25b2";
+  }
+
+  a#cRetour:hover {
+    background: rgba(0, 0, 0, 1);
+    transition: all ease-in 0.2s;
+  }
+
+  a#cRetour.cInvisible {
+    bottom: -35px;
+    opacity: 0;
+    transition: all ease-in 0.5s;
+  }
+
+  a#cRetour.cVisible {
+    bottom: 20px;
+    opacity: 1;
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a class="js-scrollTo" name="haut" id="haut"></a>
+      <div id="header">
+        <div class="portfolio">
+          <a class="js-scrollTo" href="#galery">Mes travaux</a>
+        </div>
+
+        <div class="apropos ml-3">
+          <a class="js-scrollTo" href="#apropos">A propos</a>
+        </div>
+
+        <div class="contact">
+          <a class="js-scrollTo" href="#contact">Me contacter</a>
+        </div>
+      </div>
+  </nav>
+</header>
+
+<div class="sidebar">
+    <ul>
+      <li><a href="https://twitter.com/ArnaudCrtllr"><i class="fab fa-twitter fa-2x"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/arnaud-cartailler/"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+      <li><a href="https://discordapp.com/"><i class="fab fa-discord fa-2x"></i></a></li>
+    </ul>
+</div>
+
+
+<div class="accueil">
+
+  <div class="video_home">
+    <video playsinline autoplay muted loop poster="Blurry-Lights.jpg" id="bgvid">
+      <source src="Blurry-Lights.webm" type="video/webm">
+      <source src="Blurry-Lights.mp4" type="video/mp4">
+    </video>
+  </div>
+
+<div class="presentation">
+  <h1>Bienvenue</h1>
+  <div id="messenger"></div>
+</div>
+
+</div>
+
+
+<div id="galery" class="container-fluid">
+
+  <div class="row real">
+  <p class="titre mt-5 mb-5 pr-5">Mes réalisations</p>
+  </div>
+
+  <div class="row leboncoin">
+
+
+  <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <p>Une reproduction du fameux site de ventes et d'achats Leboncoin. N'hésitez pas à visiter le repo ou la page.</p>
+      <div class="repo">
+        <a href="#">Voir la page</a>
+      </div>
+    <div class="page">
+        <a href="#">Voir le repo</a>
+      </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" data-aos="flip-up" data-aos-duration="1700">
+    <img src="img/leboncoin.png" alt="" height="250">
+  </div>
+
+</div>
+
+<div class="row archiduchesse">
+
+
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" data-aos="flip-up" data-aos-duration="1700">
+    <img src="img/archiduchesse.png" alt="" height="250">
+  </div>
+
+  <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <p> La reproduction du site e-commerce Archiduchesse effectuée lors du début de ma formation chez Simplon</p>
+      <div class="repo">
+        <a href="#">Voir la page</a>
+      </div>
+      <div class="page">
+        <a href="#">Voir le repo</a>
+      </div>
+  </div>
+
+</div>
+
+<div class="row leboncoin">
+
+
+  <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <p>Un TODO-List avec espace membre.</p>
+    <div class="repo">
+      <a href="#">Voir la page</a>
+    </div>
+  <div class="page">
+      <a href="#">Voir le repo</a>
+  </div>
+  </div>
+
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" data-aos="flip-up" data-aos-duration="1700">
+    <img src="img/TODO.png" alt="" height="250">
+  </div>
+
+</div>
+
+<div class="row archiduchesse">
+
+
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" data-aos="flip-up" data-aos-duration="1700">
+    <img src="img/ecom.png" alt="" height="300">
+  </div>
+
+  <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <p>Site e-commerce</p>
+    <div class="repo">
+      <a href="#">Voir la page</a>
+    </div>
+    <div class="page">
+      <a href="#">Voir le repo</a>
+    </div>
+  </div>
+
+</div>
+
+<div id="apropos" class="row w-100 ml-5">
+  <p class="titre mt-5 mb-5">Un peu plus sur moi</p>
+</div>
+
+<div class="row present">
+  <div class="me col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    <img src="img/me.jpg" alt="" height="300">
+  </div>
+  <div class="me2 col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    <img src="img/icon.png" alt="" height="200">
+   </div>
+<div class="me col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    <p>Développeur web ayant 25 ans à l'heure actuelle. Autodidacte dans plusieurs domaines : Musique, Hypnose, Informatique.
+    Après avoir tâtonner dans mes études, je trouve ma vocation en entrant dans la formation Yes We Web pour devenir
+    développeur web/logiciel. Les expériences et méthodologies acquises durant mes études me permettent de m'adapter
+    rapidement aux situations. Intéressé pour plus d'informations ? Scrollez !
+ </p>
+ </div>
+</div>
+
+
+  <div class="row time">
+    <div class="col-md-12">
+      <div class="main-timeline5">
+        <div class="timeline" data-aos="fade-left" data-aos-duration="1700">
+          <div class="timeline-icon"><span class="year">2018</span></div>
+          <div class="timeline-content">
+            <h3 class="title">Formation Yes We Web</h3>
+            <p class="description">
+              Je commence une formation développeur web/logiciel. J'ai enfin trouvé ma voie.
+            </p>
+          </div>
+        </div>
+<div class="timeline" data-aos="fade-right" data-aos-duration="1700">
+          <div class="timeline-icon"><span class="year">2018</span></div>
+          <div class="timeline-content">
+            <h3 class="title">Master Métier de l'Enseignement, de l'Education et de la Formation.</h3>
+            <p class="description">
+              Après avoir obtenu mon 1er semestre du M2 et après de nombreuses réflexions, je m'intéresse à une ré-orientation dans le web.
+            </p>
+          </div>
+        </div>
+      <div class="timeline" data-aos="fade-left" data-aos-duration="1700">
+          <div class="timeline-icon"><span class="year">2016</span></div>
+          <div class="timeline-content">
+            <h3 class="title">Master Recherche STAPS - Psychologie</h3>
+            <p class="description">
+              Après une année de recherche dans les sciences cognitives, je décide de changer de voie.
+            </p>
+          </div>
+        </div>
+<div class="timeline p-1" data-aos="fade-right" data-aos-duration="1700">
+          <div class="timeline-icon"><span class="year">2014</span></div>
+          <div class="timeline-content">
+            <h3 class="title">Licence</h3>
+            <p class="description">
+              J'obtiens une licence STAPS Activité Physique Adaptée à la Santé (Lille 2). Je suis accepté sur les stages suivant :
+              hopital de rééducation BPCO, EPSM de Lille.
+            </p>
+          </div>
+        </div>
+        <div class="timeline p-2" data-aos="fade-left" data-aos-duration="1700">
+            <div class="timeline-icon"><span class="year">2011</span></div>
+            <div class="timeline-content">
+              <h3 class="title">Baccalauréat</h3>
+              <p class="description">
+                Baccalauréat Scientifique Spécialité SVT.
+              </p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+<div class="row cv">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <a href="CV.pdf"><img src="img/bck.svg" height="150"></a>
+  </div>
+</div>
+
+<div id="contact" class="row w-100 ml-5">
+<p class="titre mt-5 mb-5">Une question ? Un renseignement ?</p>
+</div>
+
+  <div class="row w-100 ml-5">
+    <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6" id="contact">
+      <div class="my_contact">
+        <h1>Contactez moi !</h1>
+        <div class="contact-form">
+          <div class="mailbg">
+            <label class="l1" for="mailinput">Email:</label>
+            <input class="mailinput" aria-label="Your Email" autocomplete="on" type="email" placeholder="">
+            <label class="l2" for="messtxt">Votre message:</label>
+            <textarea class="messtxt" aria-label="Your Message" placeholder=""></textarea>
+            <button class="sendmess" aria-label="Send message">Envoyer<div class="bar"></div></button>
+            <div class="success">Message envoyé avec succès.<br><br>Merci !</div>
+            <button class="closemess" aria-label="Close Form">Fermer</div></button>
+          </div>
+        </div>
+      </div>
+
+        <div class="map col-xs-12 col-sm-12 col-md-6 col-lg-6 m-0">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2533.068119748118!2d3.118692551038175!3d50.588687179394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d6f3dde76c5b%3A0x34141538b049659f!2sGroupe+VITAMINE+T!5e0!3m2!1sfr!2sfr!4v1540453445587"
+            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+  </div>
+
+
+</div>
+
+<div>
+  <a class="js-scrollTo" id="cRetour" class="cInvisible" href="#haut"></a>
+</div>
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    window.onscroll = function (ev) {
+      document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+    };
+  });
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.js-scrollTo').on('click', function () { // Au clic sur un élément
+      var page = $(this).attr('href'); // Page cible
+      var speed = 750; // Durée de l'animation (en ms)
+      $('html, body').animate({
+        scrollTop: $(page).offset().top
+      }, speed); // Go
+      return false;
+    });
+  });
+</script>
+<!--Test script header-->
+
+<script>
+  var Messenger = function (el) {
+    'use strict';
+    var m = this;
+
+    m.init = function () {
+      m.codeletters = "&#*+%?£@§$";
+      m.message = 0;
+      m.current_length = 0;
+      m.fadeBuffer = false;
+      m.messages = [
+        "Je suis développeur web",
+        "Je m'appelle Arnaud Cartailler"
+      ];
+
+      setTimeout(m.animateIn, 100);
+    };
+
+    m.generateRandomString = function (length) {
+      var random_text = '';
+      while (random_text.length < length) {
+        random_text += m.codeletters.charAt(Math.floor(Math.random() * m.codeletters.length));
+      }
+
+      return random_text;
+    };
+
+    m.animateIn = function () {
+      if (m.current_length < m.messages[m.message].length) {
+        m.current_length = m.current_length + 2;
+        if (m.current_length > m.messages[m.message].length) {
+          m.current_length = m.messages[m.message].length;
+        }
+
+        var message = m.generateRandomString(m.current_length);
+        $(el).html(message);
+
+        setTimeout(m.animateIn, 20);
+      } else {
+        setTimeout(m.animateFadeBuffer, 20);
+      }
+    };
+
+    m.animateFadeBuffer = function () {
+      if (m.fadeBuffer === false) {
+        m.fadeBuffer = [];
+        for (var i = 0; i < m.messages[m.message].length; i++) {
+          m.fadeBuffer.push({
+            c: (Math.floor(Math.random() * 12)) + 1,
+            l: m.messages[m.message].charAt(i)
+          });
+        }
+      }
+
+      var do_cycles = false;
+      var message = '';
+
+      for (var i = 0; i < m.fadeBuffer.length; i++) {
+        var fader = m.fadeBuffer[i];
+        if (fader.c > 0) {
+          do_cycles = true;
+          fader.c--;
+          message += m.codeletters.charAt(Math.floor(Math.random() * m.codeletters.length));
+        } else {
+          message += fader.l;
+        }
+      }
+
+      $(el).html(message);
+
+      if (do_cycles === true) {
+        setTimeout(m.animateFadeBuffer, 50);
+      } else {
+        setTimeout(m.cycleText, 2000);
+      }
+    };
+
+    m.cycleText = function () {
+      m.message = m.message + 1;
+      if (m.message >= m.messages.length) {
+        m.message = 0;
+      }
+
+      m.current_length = 0;
+      m.fadeBuffer = false;
+      $(el).html('');
+
+      setTimeout(m.animateIn, 200);
+    };
+
+    m.init();
+  }
+
+  console.clear();
+  var messenger = new Messenger($('#messenger'));
+</script>
+
+<!--Test contact us -->
+
+<script>
+  $(".sendmess").click(function () {
+    $(".bar").css("animationName", "send");
+    SendMess();
+  })
+
+  function SendMess() {
+    setTimeout(function () {
+      $(".l1").css("display", "none");
+      $(".l2").css("display", "none");
+      $(".mailinput").css("display", "none");
+      $(".messtxt").css("display", "none");
+      $(".sendmess").css("display", "none");
+
+      $(".success").css("display", "inline");
+      $(".closemess").css("display", "inline");
+    }, 1500);
+  }
+
+  $(".closemess").click(function () {
+    $(".bar").css("animationName", "none");
+    $(".l1").css("display", "inline");
+    $(".l2").css("display", "inline");
+    $(".mailinput").css("display", "inline");
+    $(".messtxt").css("display", "inline");
+    $(".sendmess").css("display", "inline");
+
+    $(".success").css("display", "none");
+    $(".closemess").css("display", "none");
+
+    $(".mailinput").val("");
+    $(".messtxt").val("");
+  })
+</script>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>

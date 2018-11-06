@@ -1,0 +1,1250 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body{
+    overflow-x: hidden;
+}
+
+   header {
+    top: 0;
+    width: 100%;
+    display: flex;
+}
+
+header nav {
+    width: 100%;
+    text-align: right;
+    background-color: #252627;
+    border-radius: 5px;
+}
+
+header .portfolio, .apropos, .contact {
+    width: 12%;
+    display: inline-flex;
+    margin: 20px 0px 20px 0px;
+}
+
+header nav a {
+    position: relative;
+    color : white;
+    font-size: 20px;
+}
+
+
+    header nav a:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    header nav a:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    header nav a:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+
+/*SIDESOCIAL*/
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    background-color : #252627;
+    margin: 0 0px 0px -30px;
+    padding: 150px 20px 200px 0px;
+}
+
+.sidebar i{
+    color : white;
+    margin-left : 10px;
+}
+
+  .sidebar ul li {
+    list-style-type: none;
+    margin-top: 150%;
+    width: 40px;
+}
+
+  .sidebar ul li a:hover {
+     transition: 0.6s;
+     font-size: 25px;
+}
+
+
+
+/*VIDEO ACCUEIL*/
+
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width : 100vh;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+}
+
+/*MESSAGE*/
+
+.presentation h1 {
+    margin-top: 150px;
+    margin-bottom: 370px;
+    text-align: center;
+    color : white;
+    font-size: 40px;
+}
+
+
+
+#messenger {
+    color : white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    white-space: nowrap;
+    text-shadow: 0 2px 2px rgba(#000, 0.9);
+}
+
+/*WORK*/
+
+.container-fluid .real{
+    margin-top : 350px;
+    width : 105%;
+    padding-left : 20px;
+}
+.container-fluid .row{
+    padding-top : 50px;
+    background-color : #FAFAFA;
+    margin-right : 80px;
+}
+
+.container-fluid .row .titre{
+    margin : auto ;
+    text-align: center;
+    font-size : 35px;
+    border : 2px solid #252627;
+    padding-left : 100px;
+    padding-right : 10px;
+    border-left : none;
+    border-right : none;
+    background-color : #FAFAFA;
+
+}
+
+.container-fluid .leboncoin p{
+    font-size : 20px;
+    margin-top : 20px;
+    text-align: center;
+}
+
+.container-fluid .leboncoin img {
+    box-shadow: 1px 10px 10px lightgrey;
+}
+
+.container-fluid .leboncoin .repo a {
+      background: #252627;
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 50px;
+      font-weight: bold;
+      margin-top: 45px;
+      color:white;
+      padding:20px;
+      display: block;
+      background-image: linear-gradient(to left,
+      transparent,
+      transparent 50%,
+      #FC0853 50%,
+      #FC0853);
+      background-position: 100% 0;
+      background-size: 200% 100%;
+      transition: all .5s ease-in;
+        border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+
+}
+
+
+.container-fluid .leboncoin .repo a:hover {
+    background-position: 0 0;
+    border : none;
+    color: white;
+    box-shadow: 5px 5px 5px lightgrey;
+    text-decoration : none;
+}
+
+.container-fluid .leboncoin .page a{
+      width: 25%;
+      margin: 0 auto;
+      text-align: center;
+      text-decoration :underline;
+      padding: 10px;
+      color : black;
+      font-weight: bold;
+      margin-top: 15px;
+      display: block;
+
+}
+
+.container-fluid .archiduchesse p {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container-fluid .archiduchesse img {
+    box-shadow: 1px 10px 10px lightgrey;
+}
+
+.container-fluid .archiduchesse .repo a {
+    background: #252627;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+    font-weight: bold;
+    margin-top: 45px;
+    color: white;
+    padding: 20px;
+    display: block;
+    background-image: linear-gradient(to left,
+        transparent,
+        transparent 50%,
+        #FC0853 50%,
+        #FC0853);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .5s ease-in;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.container-fluid .archiduchesse .page a {
+      width: 25%;
+      margin: 0 auto;
+      text-align: center;
+      text-decoration :underline;
+      padding: 10px;
+      color : black;
+      font-weight: bold;
+      margin-top: 15px;
+      display: block;
+
+}
+
+.container-fluid .archiduchesse .repo a:hover {
+    background-position: 0 0;
+    border: none;
+    color: white;
+    box-shadow: 5px 5px 5px lightgrey;
+    text-decoration: none;
+}
+
+/*PRESENT*/
+
+.container-fluid .present{
+    margin : auto;
+    width : 110%;
+    padding-right : 60px;
+}
+
+.container-fluid .present .me img{
+    margin-left : 150px;
+}
+
+.container-fluid .present .me2 img {
+    margin-left: 80px;
+}
+
+.container-fluid .present .me p{
+    width : 100%;
+    margin-left: -100px;
+    font-size : 20px;
+}
+
+
+/*TIMELINE*/
+
+.container-fluid .time{
+    margin-left : 50px;
+    width : 99%;
+}
+
+.main-timeline5 {
+    overflow: hidden;
+    position: relative;
+    background-color : #FAFAFA;
+}
+
+.main-timeline5 .timeline {
+    position: relative;
+    margin-top: -79px
+}
+
+.main-timeline5 .timeline:first-child {
+    margin-top: 0
+}
+
+.main-timeline5 .timeline-icon,
+.main-timeline5 .year {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0
+}
+
+.main-timeline5 .timeline:after,
+.main-timeline5 .timeline:before {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both
+}
+
+.main-timeline5 .timeline:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2
+}
+
+.main-timeline5 .timeline-icon {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    border: 25px solid transparent;
+    border-top-color: #f44556;
+    border-right-color: #f44556;
+    z-index: 1;
+    transform: rotate(45deg)
+}
+
+.main-timeline5 .year {
+    display: block;
+    width: 110px;
+    height: 110px;
+    line-height: 110px;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    color: #f44556;
+    text-align: center;
+    transform: rotate(-45deg)
+}
+
+.main-timeline5 .timeline-content {
+    width: 35%;
+    float: right;
+    background: #f44556;
+    padding: 30px 20px;
+    margin: 50px 0;
+    z-index: 1;
+    position: relative
+}
+
+.main-timeline5 .timeline-content:before {
+    content: "";
+    width: 20%;
+    height: 15px;
+    background: #f44556;
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    z-index: -1;
+    transform: translateY(-50%)
+}
+
+.main-timeline5 .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 10px
+}
+
+.main-timeline5 .description {
+    font-size: 16px;
+    color: #fff;
+    line-height: 24px;
+    margin: 0
+}
+
+
+.main-timeline5 .timeline:nth-child(2n) .timeline-icon {
+    transform: rotate(-135deg);
+    border-top-color: #e97e2e;
+    border-right-color: #e97e2e
+}
+
+.main-timeline5 .timeline:nth-child(2n) .year {
+    transform: rotate(135deg);
+    color: #e97e2e
+}
+
+.main-timeline5 .timeline:nth-child(2n) .timeline-content {
+    float: left
+}
+
+.main-timeline5 .timeline:nth-child(2n) .timeline-content:before {
+    left: auto;
+    right: -20%
+}
+
+.main-timeline5 .timeline:nth-child(2n) .timeline-content,
+.main-timeline5 .timeline:nth-child(2n) .timeline-content:before {
+    background: #e97e2e
+}
+
+.main-timeline5 .timeline:nth-child(3n) .timeline-icon {
+    border-top-color: #13afae;
+    border-right-color: #13afae
+}
+
+.main-timeline5 .timeline:nth-child(3n) .year {
+    color: #13afae
+}
+
+.main-timeline5 .timeline:nth-child(3n) .timeline-content,
+.main-timeline5 .timeline:nth-child(3n) .timeline-content:before {
+    background: #13afae
+}
+
+.main-timeline5 .timeline:nth-child(4n) .timeline-icon {
+    border-top-color: #105572;
+    border-right-color: #105572
+}
+
+.main-timeline5 .timeline:nth-child(4n) .year {
+    color: #105572
+}
+
+.main-timeline5 .timeline:nth-child(4n) .timeline-content,
+.main-timeline5 .timeline:nth-child(4n) .timeline-content:before {
+    background: #105572
+}
+
+@media only screen and (max-width:1199px) {
+    .main-timeline5 .timeline {
+        margin-top: -103px
+    }
+
+    .main-timeline5 .timeline-content:before {
+        left: -18%
+    }
+
+    .main-timeline5 .timeline:nth-child(2n) .timeline-content:before {
+        right: -18%
+    }
+}
+
+@media only screen and (max-width:990px) {
+    .main-timeline5 .timeline {
+        margin-top: -127px
+    }
+
+    .main-timeline5 .timeline-content:before {
+        left: -2%
+    }
+
+    .main-timeline5 .timeline:nth-child(2n) .timeline-content:before {
+        right: -2%
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .main-timeline5 .timeline {
+        margin-top: 0;
+        overflow: hidden
+    }
+
+    .main-timeline5 .timeline:before,
+    .main-timeline5 .timeline:nth-child(2n):before {
+        box-shadow: none
+    }
+
+    .main-timeline5 .timeline-icon,
+    .main-timeline5 .timeline:nth-child(2n) .timeline-icon {
+        margin-top: -30px;
+        margin-bottom: 20px;
+        position: relative;
+        transform: rotate(135deg)
+    }
+
+    .main-timeline5 .timeline:nth-child(2n) .year,
+    .main-timeline5 .year {
+        transform: rotate(-135deg)
+    }
+
+    .main-timeline5 .timeline-content,
+    .main-timeline5 .timeline:nth-child(2n) .timeline-content {
+        width: 100%;
+        float: none;
+        border-radius: 0 0 20px 20px;
+        text-align: center;
+        padding: 25px 20px;
+        margin: 0 auto
+    }
+
+    .main-timeline5 .timeline-content:before,
+    .main-timeline5 .timeline:nth-child(2n) .timeline-content:before {
+        width: 15px;
+        height: 25px;
+        position: absolute;
+        top: -22px;
+        left: 50%;
+        z-index: -1;
+        transform: translate(-50%, 0)
+    }
+}
+
+/*CV*/
+
+.container-fluid .cv{
+    width : 100%;
+    margin-left : 50px;
+}
+
+.cv img{
+    border : 2px solid black;
+    padding: 15px;
+    border-radius : 5px;
+    margin-left : 43%;
+    transition : 0.5s;
+}
+
+.cv img:hover {
+    transition : 0.5s;
+    transform: scale(1.08);
+    box-shadow: 5px 5px 10px grey;
+}
+/*CONTACT*/
+
+
+.my_contact {
+    background-color : #FAFAFA;
+}
+
+.my_contact h1 {
+    text-align: center;
+    color: black;
+    font-size : 23px;
+    margin: 20px 0px 150px 0px;
+}
+
+button {
+    padding: 0;
+    border: 0;
+    background: none;
+}
+
+.my_contact .contact-form .mailbg {
+    margin-left: 50%;
+    margin-top: 45%;
+    width: 80vw;
+    max-width: 400px;
+    height: 500px;
+    background-color : #FAFAFA;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 5px white;
+}
+
+.my_contact .contact-form .mailbg:hover {
+    box-shadow: 0px 0px 15px white;
+    transition: 0.5s;
+}
+
+
+label {
+    font-size : 20px;
+    color: black;
+}
+
+.my_contact .l1 {
+    position: absolute;
+    top: 20px;
+    left: 5%;
+
+}
+
+.my_contact .l2 {
+    position: absolute;
+    top: 120px;
+    left: 5%;
+}
+
+.my_contact .mailinput {
+    position: absolute;
+    top: 50px;
+    box-sizing: border-box;
+    border: none;
+    padding: 5px;
+    left: 50%;
+    width: 90%;
+    height: 50px;
+    resize: none;
+    font-size : 20px;
+    -webkit-transform: translate(-50%, -0%);
+    -ms-transform: translate(-50%, -0%);
+    transform: translate(-50%, -0%);
+    border: 3px solid lightgrey;
+    border-radius: 5px;
+}
+
+.my_contact .mailinput:hover {
+    box-shadow: 0px 0px 10px lightgrey;
+    transition: 0.5s;
+}
+
+.my_contact .mailinput:focus {
+    outline: none;
+}
+
+.my_contact .messtxt {
+    position: absolute;
+    top: 150px;
+    box-sizing: border-box;
+    border: none;
+    padding: 5px;
+    left: 50%;
+    width: 90%;
+    height: 250px;
+    resize: none;
+    font-size: 20px;
+    -webkit-transform: translate(-50%, -0%);
+    -ms-transform: translate(-50%, -0%);
+    transform: translate(-50%, -0%);
+    border: 3px solid lightgrey;
+    border-radius: 5px;
+}
+
+.my_contact .messtxt:hover {
+    box-shadow: 0px 0px 10px lightgrey;
+    transition: 0.5s;
+}
+
+.my_contact .messtxt:focus {
+    outline: none;
+    transition: 0.5s;
+}
+
+.my_contact .sendmess {
+    position: absolute;
+    top: 420px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -0%);
+    -ms-transform: translate(-50%, -0%);
+    transform: translate(-50%, -0%);
+    width: 40%;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    background-color : #FAFAFA;
+    line-height: 40px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 3px solid #FC0853;
+    border-radius: 5px;
+}
+
+.my_contact .sendmess:hover {
+    transition: 0.5s;
+}
+
+.my_contact .sendmess:focus {
+    outline: none;
+}
+
+.my_contact .bar {
+    position: absolute;
+    width: auto;
+    background:#FC0853;
+    opacity: 0.8;
+    top: 0%;
+    left: 0;
+    right: 100%;
+    height: 100%;
+    content: "";
+    animation: sent 1.5s forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes send {
+    0% {
+        right: 100%;
+    }
+
+    100% {
+        right: 0%;
+    }
+}
+
+.my_contact .success {
+    position: absolute;
+    top: 120px;
+    width: 80%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -0%);
+    -ms-transform: translate(-50%, -0%);
+    transform: translate(-50%, -0%);
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    display: none;
+}
+
+.my_contact .closemess {
+    position: absolute;
+    top: 330px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -0%);
+    -ms-transform: translate(-50%, -0%);
+    transform: translate(-50%, -0%);
+    width: 60%;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FC0853;
+    background: #000;
+    line-height: 40px;
+    cursor: pointer;
+    display: none;
+    border-radius: 5px;
+}
+
+.my_contact .closemess:focus {
+    outline: none;
+}
+
+.map{
+    margin-top : 100px;
+    background-color : #FAFAFA;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (max-width: 780px) {
+    /*header*/
+
+    header {
+        top: 0;
+        width: 100%;
+        display: flex;
+    }
+
+    header nav {
+        width: 100%;
+        text-align: right;
+        background-color: black;
+        opacity: 0.8;
+        border-radius: 5px;
+    }
+
+    header .portfolio,
+    .apropos,
+    .contact {
+        width: 30%;
+        display: inline-flex;
+        margin: 20px 0px 20px 0px;
+    }
+
+    header nav a {
+        color: white;
+        font-size: 15px;
+    }
+
+    header nav a:hover {
+        color: white;
+        font-size: 15px;
+    }
+
+    /*video*/
+
+    .video_home {
+        display: none;
+    }
+
+    /*side bar*/
+
+    .sidebar {
+        display: none;
+    }
+
+    /*présentation*/
+
+    .presentation h1 {
+        margin-right: 50px;
+        font-size: 20px;
+        color: black;
+    }
+
+    .presentation #messenger {
+        font-size: 25px;
+        margin-top : 5%;
+        color: black;
+    }
+
+    /*galery*/
+
+    .container-fluid .leboncoin{
+        margin-left : 50px;
+        width : 70%;
+    }
+
+      .container-fluid .archiduchesse {
+          margin-left: 50px;
+          width: 70%;
+      }
+    .container-fluid .leboncoin img{
+        width: 95%;
+        margin : auto;
+    }
+
+    .archiduchesse img{
+         width: 95%;
+         margin : auto;
+    }
+
+    /*present*/
+
+    .container-fluid .present{
+        width : 100%;
+        margin-left : -150px;
+    }
+
+    /*contact*/
+
+    .my_contact h1 {
+        display: none;
+    }
+
+    .my_contact{
+        margin-top : 200px;
+    }
+
+    .my_contact .contact-form{
+        height : 250px;
+    }
+
+    .my_contact .contact-form .mailbg {
+        margin-top: 100px;
+    }
+
+    .my_contact .success {
+        top: 130px;
+    }
+
+    #cRetour {
+        display: none;
+    }
+
+    iframe{
+        margin-left : -30px;
+        height : 300px;
+        width : 100%;
+        padding : 0;
+    }
+}
+
+@media only screen and (min-width: 781px) and (max-width: 1110px) {
+
+    header {
+        top: 0;
+        width: 100%;
+        display: flex;
+    }
+
+    header nav {
+        width: 100%;
+        text-align: right;
+        background-color: black;
+        opacity: 0.8;
+        border-radius: 5px;
+    }
+
+    header .portfolio,
+    .apropos,
+    .contact {
+        width: 20%;
+        display: inline-flex;
+        margin: 20px 0px 20px 0px;
+    }
+
+    header nav a {
+        color: white;
+        font-size: 15px;
+    }
+
+    header nav a:hover {
+        color: white;
+        font-size: 15px;
+    }
+
+    /*side bar*/
+
+    .sidebar {
+        display: inline;
+        margin-top: 0%;
+    }
+
+    /*présentation*/
+
+    .presentation h1 {
+        font-size: 30px;
+    }
+
+    .presentation #messenger {
+        margin-top: 10%;
+        font-size: 25px;
+    }
+
+    /*galery*/
+
+    .leboncoin img {
+        width: 95%;
+        margin: auto;
+    }
+
+    .archiduchesse img {
+        width: 95%;
+        margin: auto;
+    }
+
+    /*contact*/
+
+    .my_contact h1 {
+        font-size: 30px;
+    }
+
+    .my_contact .contact-form .mailbg {
+        position: absolute;
+        margin-top: 100px;
+    }
+
+    .my_contact .success {
+        top: 130px;
+    }
+}
+
+@media only screen and (min-width: 1111px) and (max-width: 2000px) {
+
+    .video_home{
+        margin-bottom : 350px;
+    }
+
+    .presentation h1{
+        margin-bottom : 30px;
+    }
+
+    .container-fluid .leboncoin{
+        margin-left : 150px;
+    }
+
+    .container-fluid .archiduchesse{
+        margin-left : 150px;
+    }
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
