@@ -583,6 +583,11 @@ video#bgvid {
 }
 
 @media only screen and (max-width:767px) {
+
+    .container-fluid .time {
+        margin-left: 0px;
+        width: 100%;
+    }
     .main-timeline5 .timeline {
         margin-top: 0;
         overflow: hidden
@@ -625,6 +630,13 @@ video#bgvid {
         left: 50%;
         z-index: -1;
         transform: translate(-50%, 0)
+    }
+
+    .container-fluid .present .me img {
+        margin-left: -50px;
+    }
+    .container-fluid .present .me2 img {
+        margin-left: 0px;
     }
 }
 
@@ -1035,9 +1047,13 @@ label {
 
     .container-fluid .present{
         width : 100%;
-        margin-left : -150px;
+        margin-left : 120px;
+        text-align: center;
     }
 
+    .container-fluid .present img{
+        margin-right: 700px;
+    }
     /*contact*/
 
     .my_contact h1 {
